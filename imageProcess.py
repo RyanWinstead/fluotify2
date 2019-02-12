@@ -53,3 +53,5 @@ def imagePros(fileName, option):
 	#print(cnts)
 	cnts = cnts[0] if imutils.is_cv2() else cnts[1]
 	return cnts, image_edged3, image_contours
+
+#test comment
