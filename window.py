@@ -1,4 +1,4 @@
-import qtpy #testing
+import qtpy #GUI libraries
 from PyQt5.QtCore import QDir, Qt, QUrl
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
 from PyQt5.QtMultimediaWidgets import QVideoWidget
@@ -28,7 +28,7 @@ class Window(QWidget):
         #resize button and move it onto the window. sizeHint() method gives a recommended size for the button
         openImageButton.clicked.connect(self.openImage)
 
-        openTrackingButton = QPushButton('Tracking video', self)
+        openTrackingButton = QPushButton('Tracking video', self) #create buyton widget for video tracker
         openTrackingButton.resize(openTrackingButton.sizeHint())
         openTrackingButton.move(200,50)
         openTrackingButton.setObjectName("openImageButton")
@@ -44,6 +44,7 @@ class Window(QWidget):
             openImage()
         else:
             pass
+
     #if image button is pressed
     def openImage(self):
         print("image button pressed!")
@@ -57,6 +58,7 @@ class Window(QWidget):
         if fileName != '':
 
             pass
+
     #if video button is pressed
     def openTracking(self):
         print("video button pressed!")

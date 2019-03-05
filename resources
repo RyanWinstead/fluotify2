@@ -1,2 +1,10 @@
 Used Feb 2019 to connect atom to github repo
 https://www.hongkiat.com/blog/manage-git-github-atom/
+
+\\\\OpenCV resources:
+open/read images
+  https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_gui/py_image_display/py_image_display.html
+image thresholding
+  https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html#thresholding
+Image Morph(open, close, etc.)
+  https://docs.opencv.org/3.3.0/d9/d61/tutorial_py_morphological_ops.html

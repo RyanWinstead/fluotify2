@@ -12,6 +12,7 @@ def ContourCounting(fileName):
 
 
     option = ""
+    #process image in imageProcess.py (imagePros)
     cnts, image_edged3, image_contours = imagePros(fileName, option)
     print(cnts, image_edged3, image_contours)
 
@@ -37,7 +38,8 @@ def ContourCounting(fileName):
     cv2.putText(image_contours, "cell count: " + str(counter), (10,40), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0,0,255),2);
 
 
-    cv2.imshow("Original", image_contours);
+    cv2.imshow("Final", image_contours);
+    cv2.imshow("Theshold", image_edged3);
     print("Before the wait")
     cv2.waitKey(0)
     print("After the wait");

@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 import imutils
-
+#####################################
 #all image morphological functions
 def imagePros(fileName, option):
 	global image
@@ -53,6 +53,7 @@ def imagePros(fileName, option):
 	#print(cnts)
 	cnts = cnts[0] if imutils.is_cv2() else cnts[1]
 	return cnts, image_edged3, image_contours
-
+###################################
 #test comment
 #test comment by Pleuni!
+#amaris
