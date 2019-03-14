@@ -8,3 +8,17 @@ image thresholding
   https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html#thresholding
 Image Morph(open, close, etc.)
   https://docs.opencv.org/3.3.0/d9/d61/tutorial_py_morphological_ops.html
+
+
+Notes from IBM interview
+Adaptive threshhold to find more cells
+Libraries:
+OpenCV
+deep learning
+tensaflow
+caras
+Enviornment:
+pycharm
+anaconda
+spyder
+jupiter
