@@ -1,12 +1,8 @@
-import qtpy #GUI libraries
-from PyQt5.QtCore import QDir, Qt, QUrl
-from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
-from PyQt5.QtMultimediaWidgets import QVideoWidget
+from PyQt5.QtCore import QDir
 from PyQt5.QtWidgets import *
 import sys
 from ContourCounting import *
 from vidContour import *
-import cv2
 #create window class
 class Window(QWidget):
 

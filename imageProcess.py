@@ -1,12 +1,7 @@
-from PyQt5.QtCore import QDir, Qt, QUrl
-from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
-from PyQt5.QtMultimediaWidgets import QVideoWidget
 from PyQt5.QtWidgets import *
-import sys
 from ContourCounting import *
 import cv2
 import numpy as np
-import matplotlib.pyplot as plt
 import cv2
 import imutils
 #####################################
