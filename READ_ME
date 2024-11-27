@@ -1,0 +1,32 @@
+Fluotify
+
+Intro:
+Fluotify is a python , cell imaging and tracking software intended for
+biological researchers utilizing OpenCV to count and track cells in images and
+videos.
+Edited by Emily:
+Fluotify is Python based cell imaging and tracking software intended to be
+utilized by biological researchers.
+
+Edited by Kaho:
+Motivation:
+This software was created to aid biological researchers to obtain counts from
+an image or video, such as cell counts or colony counts. Instead of counting by
+hand, this will speed up the analytical process and provide quantitative data.
+
+Technology:
+  Enviornment: Atom
+  Libraries: OpenCV
+             PyQt5
+             Numpy
+
+How to use:
+Necessary Files for Image input: window.py, CountourCounting.py, imageProcess.py
+Necessary for Video Input: window.py, imageProcess.py, vidContour.py, tracking.py
+To use, run window.py which opens main window.
+
+Contributions:
+Ryan Winstead
+Cecelia Brown
+Mayra
+Uzair
