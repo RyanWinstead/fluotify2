@@ -10,13 +10,13 @@ from imageProcess import imagePros
 
 class vidContour():
 	def __init__(self, fileName):
-		self.fileName = fileName
-		cv2.namedWindow('cellVid')
-		self.video = cv2.VideoCapture(self.fileName)
-		self.length  = int(self.video.get(cv2.CAP_PROP_POS_FRAMES))
-		cv2.createTrackbar( 'start', 'cellVid', 0, 100, self.onChange)#self.length
-		self.start = cv2.getTrackbarPos('start','cellVid')
-		self.onChange(0)
+	    self.fileName = fileName
+	    cv2.namedWindow('cellVid')
+	    self.video = cv2.VideoCapture(self.fileName)
+	    self.length = int(self.video.get(cv2.CAP_PROP_FRAME_COUNT))
+	    self.start = 0
+	    cv2.createTrackbar('start', 'cellVid', 0, 100, self.onChange)
+	    self.onChange(0)
 
 
 
@@ -36,6 +36,10 @@ class vidContour():
 		counter = 0
 		cellTags=[]
 		#Ignore contours that do not satisfy size criteria
+		#print("Number of contours:", len(cnts))
+		#for i, cnt in enumerate(cnts):
+		  #  print(i, cnt.shape, cnt.dtype)
+
 		for i in cnts:
 			if cv2.contourArea(i) < 700 or cv2.contourArea(i) > 6000:
 				continue;

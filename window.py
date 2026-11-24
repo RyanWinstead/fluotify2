@@ -1,4 +1,4 @@
-import qtpy #GUI libraries
+ #GUI libraries
 from PyQt5.QtCore import QDir, Qt, QUrl
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
 from PyQt5.QtMultimediaWidgets import QVideoWidget

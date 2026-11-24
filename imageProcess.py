@@ -49,9 +49,9 @@ def imagePros(fileName, option):
 	image_edged3 = cv2.erode (image_edged2, kernel2, iterations = 3);
 
 	#Find Contours
-	cnts = cv2.findContours(image_edged.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE);
+	cnts = cv2.findContours(image_edged3.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE);
 	#print(cnts)
-	cnts = cnts[0] if imutils.is_cv2() else cnts[1]
+	cnts = cnts[0] if len(cnts) == 2 else cnts[1]
 	return cnts, image_edged3, image_contours
 ###################################
 #test comment

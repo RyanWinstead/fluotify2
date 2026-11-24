@@ -1,0 +1,6 @@
+
+numpy==1.26.4
+matplotlib==3.9.2
+opencv-contrib-python==4.10.0.84
+imutils==0.5.4
+PyQt5==5.15.11
